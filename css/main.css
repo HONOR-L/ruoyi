@@ -1,0 +1,77 @@
+.layui-layout-admin .layui-logo{
+	background: #367fa9;
+	color: #fff;
+	font-size: 20px;
+}
+.layui-layout-admin .layui-header{
+    background-color: #3c8dbc;
+}
+.layui-nav , .layui-side-scroll{
+	background-color: #2f4050;
+}
+.layui-header .layui-layout-left{
+	margin-left: 5px;
+}
+.layui-header .layui-layout-left li{
+	line-height: 60px;
+}
+.layui-header .layui-nav li a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.layui-header .layui-layout-right li dl dd a{
+	color: #333;
+	font-weight: normal;
+}
+.layui-header .layui-layout-right li dl{
+	padding: 5px 5px;
+	
+}
+.layui-header .layui-layout-right li .z{
+	margin-left: -14px;
+}
+.layui-header .layui-layout-right li dl dd{
+	line-height: 30px;
+}
+.layui-header .layui-layout-right li dl dd a span{
+	margin-right: 12px;
+}
+.layui-header .layui-layout-right li dl dd a:hover{
+	background: #E1E3E9;
+	border-radius: 5px;
+}
+.layui-header .layui-nav li a:hover{
+	text-decoration: none;
+	background: #367fa9;
+}
+.layui-header .layui-nav li a span{
+	margin-right: 5px;
+	font-size: 14px;
+}
+
+.layui-header .layui-nav li a img{
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.layui-side .layui-side-scroll ul li a{
+	text-decoration: none;
+}
+.layui-side .layui-side-scroll ul li dl dd{
+	text-indent: 30px;
+}
+
+.layui-tab{
+	margin: 0;
+}
+
+
+.layui-footer{
+	background: #fff;
+	border-top: 1px solid #e7eaec;
+	font-size: 13px;
+    color: #676a6c;
+}

@@ -1,0 +1,117 @@
+body{
+	background: url(../img/login-background.jpg) no-repeat center fixed;
+	background-size: 100% auto ;
+}
+
+.login{
+	width: 780px;
+	padding: 0 15px ;
+	margin: 10% auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+.login_left{
+	margin-top: 25px;
+}
+.login_left ul{
+	color: #fff;
+	line-height: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.login_left ul li span{
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.login_left ul .zj{
+	display: flex;
+	flex-direction: row;
+}
+.login_left ul li:first-child img{
+	width: 121px;
+	height: 75px;
+}
+.login_left ul li:nth-child(2){
+	margin: 15px 0;
+	font-weight: bold;
+}
+.login_left ul li:last-child{
+	margin-top: 15px;
+	font-weight: bold;
+}
+.login_left ul li:last-child a{
+	color:#337ab7;
+	text-decoration: none;
+}
+.login_left ul li:last-child a:hover{
+	color:#245580;
+}
+.login_right form{
+	padding: 30px 30px;
+	background: rgba(255,255,255,.2);
+	border: 1px solid rgba(255,255,255,.3);
+}
+.login_right form h4{
+	font-weight: bold;
+	margin-bottom: 24px;
+	color: #fff;
+}
+.login_right form p{
+	margin-bottom: 20px;
+	color: #fff;
+}
+.uname, .pword{
+	width: 231px;
+	height: 32px;
+	border: none;
+	text-indent: 14px;
+	margin-bottom: 15px;
+}
+.code{
+	width: 100px;
+	height: 32px;
+	border: none;
+	text-indent: 14px;
+}
+.login_right form .uname {
+    background: #fff url(../img/user.png) no-repeat 95% center;
+    color: #333;
+}
+.login_right form .pword {
+    background: #fff url(../img/locked.png) no-repeat 95% center;
+	color: #333;
+}
+.login_right form a img{
+	width: 84px;
+	height: 30px;
+	margin-left: 28px;
+}
+.login_right form #remmember{
+	margin-top: 15px;
+	cursor: pointer;
+	background: #fff;
+}
+.login_right form label{
+	vertical-align: middle;
+	margin-left: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.login_right form .btn{
+	margin-top: 20px;
+	width: 231px;
+	height: 32px;
+	border: 1px solid #1c84c6;
+	background-color: #1a7bb9;
+	color: #fff;
+}
+
+.footer{
+	width: 750px;
+	padding: 15px 0  ;
+	margin: 1.5% auto 0;
+	border-top: 1px solid rgba(255,255,255,.3);
+}
+.ps{
+	color: #fff;
+}
