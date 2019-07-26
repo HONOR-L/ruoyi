@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/num.css"/>
+	</head>
+	<body>
+		<div class="info">
+			参数名称：<input type="text" name="" id="input" value="" />
+			参数键名：<input type="text" name="" id="input" value="" />
+			系统内置：<select name="ZT" id="input">
+						<option value="所有">所有</option>
+						<option value="是">是</option>
+						<option value="否">否</option>
+					</select>
+					<p></p>
+			创建时间：
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test" placeholder="开始时间">
+			</div>
+			-
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test1" placeholder="结束时间">
+			</div>
+			<script src="../../../../../css/layui/layui.js"></script>
+			<script>
+				layui.use('laydate', function(){
+				  var laydate = layui.laydate;
+				  laydate.render({
+				  	elem: '#test' //指定元素
+				  });
+				  //执行一个laydate实例
+				  laydate.render({
+					elem: '#test1' //指定元素
+				  });
+				});
+			</script>
+			
+			<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+				<span class="glyphicon glyphicon-search"></span>搜索
+			</button>
+			<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+				<span class="glyphicon glyphicon-refresh"></span>重置
+			</button>
+		</div>
+
+		<div class="hack">
+			<ul class="hack_top">
+				<li>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal">
+						<span class="glyphicon glyphicon-plus"></span>
+						新增
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm">
+						<span class="glyphicon glyphicon-edit"></span>
+						修改
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+						<span class="glyphicon glyphicon-remove"></span>
+						删除
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal layui-btn-warm">
+						<span class="glyphicon glyphicon-save"></span>
+						导出
+					</button>
+				</li>
+				<li>
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe654;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe642;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe640;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+					  	<i class="layui-icon layui-icon-app"></i>
+					  </button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><a href="">参数主键</a></td>
+						<td><a href="">参数名称</a></td>
+						<td><a href="">参数键名</a></td>
+						<td><a href="">参数键值</a></td>
+						<td><a href="">系统内置</a></td>
+						<td><a href="">备注</a></td>
+						<td>创建时间</td>
+						<td class="last"><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>1</td>
+						<td>主框架页-默认皮肤样式名称</td>
+						<td>sys.index.skinName</td>
+						<td>skin-blue</td>
+						<td class="layui-btn layui-btn-xs layui-btn-radius">是</td>
+						<td class="blue"><a href="">蓝色 skin-blue、绿色 skin...</a></td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>2</td>
+						<td>用户管理-账号初始密码</td>
+						<td>sys.user.initPassword</td>
+						<td>123456</td>
+						<td class="layui-btn layui-btn-xs layui-btn-radius">是</td>
+						<td>初始化密码 123456</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="footer">
+				第 1 到 2 条，共 2 条记录。
+			</div>
+		</div>
+	</body>
+</html>

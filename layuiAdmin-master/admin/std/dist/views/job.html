@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/job.css"/>
+	</head>
+	<body>
+		<div class="info">
+			岗位编码：<input type="text" name="" id="input" value="" />
+			岗位名称：<input type="text" name="" id="input" value="" />
+			岗位状态：<select name="ZT" id="input">
+						<option value="所有">所有</option>
+						<option value="正常">正常</option>
+						<option value="停用">停用</option>
+					</select>
+					
+			<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+				<span class="glyphicon glyphicon-search"></span>搜索
+			</button>
+			<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+				<span class="glyphicon glyphicon-refresh"></span>重置
+			</button>
+		</div>
+	
+		<div class="hack">
+			<ul class="hack_top">
+				<li>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal">
+						<span class="glyphicon glyphicon-plus"></span>
+						新增
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm">
+						<span class="glyphicon glyphicon-edit"></span>
+						修改
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+						<span class="glyphicon glyphicon-remove"></span>
+						删除
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal layui-btn-warm">
+						<span class="glyphicon glyphicon-save"></span>
+						导出
+					</button>
+				</li>
+				<li>
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe654;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe642;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe640;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+					  	<i class="layui-icon layui-icon-app"></i>
+					  </button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><a href="">岗位编号</a></td>
+						<td><a href="">岗位编码</a></td>
+						<td><a href="">岗位名称</a></td>
+						<td><a href="">显示顺序</a></td>
+						<td><a href="">状态</a></td>
+						<td><a href="">创建时间</a></td>
+						<td class="last"><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>1</td>
+						<td>ceo</td>
+						<td>董事长</td>
+						<td>1</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>2</td>
+						<td>se</td>
+						<td>项目经理</td>
+						<td>2</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>3</td>
+						<td>hr</td>
+						<td>人力资源</td>
+						<td>3</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>4</td>
+						<td>user</td>
+						<td>普通员工</td>
+						<td>4</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="footer">
+				第 1 到 4 条，共 4 条记录。
+			</div>
+		</div>
+	</body>
+</html>

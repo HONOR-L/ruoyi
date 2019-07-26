@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/dictionary.css"/>
+	</head>
+	<body>
+		<div class="info">
+			角色名称：<input type="text" name="" id="input" value="" />
+			权限字符：<input type="text" name="" id="input" value="" />
+			角色管理：<select name="ZT" id="input">
+						<option value="所有">所有</option>
+						<option value="正常">正常</option>
+						<option value="停用">停用</option>
+					</select>
+					<p></p>
+			创建时间：
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test" placeholder="开始时间">
+			</div>
+			-
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test1" placeholder="结束时间">
+			</div>
+			<script src="../layuiadmin/layui/layui.js"></script>
+			<script>
+				layui.use('laydate', function(){
+				  var laydate = layui.laydate;
+				  laydate.render({
+				  	elem: '#test' //指定元素
+				  });
+				  //执行一个laydate实例
+				  laydate.render({
+					elem: '#test1' //指定元素
+				  });
+				});
+			</script>
+			
+			<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+				<span class="glyphicon glyphicon-search"></span>搜索
+			</button>
+			<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+				<span class="glyphicon glyphicon-refresh"></span>重置
+			</button>
+		</div>
+
+		<div class="hack">
+			<ul class="hack_top">
+				<li>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal">
+						<span class="glyphicon glyphicon-plus"></span>
+						新增
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm">
+						<span class="glyphicon glyphicon-edit"></span>
+						修改
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+						<span class="glyphicon glyphicon-remove"></span>
+						删除
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal layui-btn-warm">
+						<span class="glyphicon glyphicon-save"></span>
+						导出
+					</button>
+				</li>
+				<li>
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe654;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe642;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe640;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+					  	<i class="layui-icon layui-icon-app"></i>
+					  </button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><a href="">字典主键</a></td>
+						<td><a href="">字典名称</a></td>
+						<td><a href="">字典类型</a></td>
+						<td><a href="">状态</a></td>
+						<td><a href="">备注</a></td>
+						<td><a href="">创建时间</a></td>
+						<td class="last"><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>1</td>
+						<td>用户性别</td>
+						<td>sys_user_sex</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>用户性别列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>2</td>
+						<td>菜单状态</td>
+						<td>sys_show_hide</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>菜单状态列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>3</td>
+						<td>系统开关</td>
+						<td>sys_normal_disable</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>系统开关列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>4</td>
+						<td>任务状态</td>
+						<td>sys_job_status</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>任务状态列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>5</td>
+						<td>任务分组</td>
+						<td>sys_job_group</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>任务分组列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>6</td>
+						<td>系统是否</td>
+						<td>sys_yes_no</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>系统是否列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>7</td>
+						<td>通知类型</td>
+						<td>sys_notice_type</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>通知状态列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>8</td>
+						<td>通知状态</td>
+						<td>sys_notice_status</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>通知状态列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>9</td>
+						<td>操作类型</td>
+						<td>sys_oper_type</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>操作类型列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>10</td>
+						<td>系统状态</td>
+						<td>sys_common_status</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>登录状态列表</td>
+						<td>2018-03-16 11:33:00</td>
+						<td class="last">
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								编辑
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>
+								<a href="Dictionary-data.html">列表</a>
+							</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								删除
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="footer">
+				第 1 到 10 条，共 10 条记录。
+			</div>
+		</div>
+	</body>
+</html>

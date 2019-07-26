@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户管理</title>
+		<link rel="stylesheet" href="../../../../../css/layui/css/layui.css" />
+	</head>
+	<body>
+		
+					
+				
+				<div style="width: 195px; height: 450px;float: left;">
+					<div id="test1" style="color: #000000;"></div>
+				</div>
+			
+	
+		  
+<script src="../../../../../css/layui/layui.js"></script>
+<script>
+  layui.use('tree', function(){
+    var tree = layui.tree;
+    var inst1 = tree.render({
+      elem: '#test1'  //绑定元素
+      ,data: [{
+		 spread:true,
+        title: '若依科技' //一级菜单
+        ,children: [{
+			spread:true,
+         title: '深圳总公司' //一级菜单
+		 
+         ,children: [{
+           title: '研发部门' ,//二级菜单
+          
+         },
+         {	
+         	 title: '市场部门' ,//二级菜单
+			 children: [{
+			   title: '研发部门' ,//二级菜单
+				 children: [{
+					  title: '研发部门' ,//三级菜单
+					}]
+			 }]
+			 
+         },
+         {
+         	 title: '财务部门' ,//二级菜单
+					 children: [{
+					 					  title: '研发部门' ,//三级菜单
+					 					}]
+         },
+         {
+         	 title: '运维部门' ,//二级菜单
+         },
+         {
+         	 title: '测试部门' ,//二级菜单
+         }],
+		 
+        },
+		{
+			title:'长沙分公司',
+			spread:true,
+			children:[{
+				
+				title:'市场部门',	
+			},
+			{
+				title:'市场部门',	
+			}]
+		}]
+      }]
+    });
+ });
+  </script>
+	</body>
+</html>

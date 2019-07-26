@@ -1,0 +1,72 @@
+body{
+	padding: 20px 30px 0 30px;
+}
+
+.layui-form-label{
+	width: 92px;
+}
+#username ,#job ,#userphone ,#email ,#usernum ,#job ,#gw {
+	width: 395px;
+	height: 34px;
+}
+.form_one label{
+	color: red;
+}
+.form_one .five{
+	margin-left: 90px;
+}
+.form_one .five label{
+	color: #000;
+	font-weight: 0;
+	margin-left: 20px;
+}
+.one{
+	padding-left: 60px;
+	margin-bottom: 20px;
+}
+.one span:last-child{
+	margin-left: 60px;
+}
+.two{
+	padding-left: 60px;
+	margin-bottom: 20px;
+}
+.two span:last-child{
+	margin-left: 88px;
+}
+.three{
+	padding-left: 60px;
+	margin-bottom: 20px;
+}
+.three span:last-child{
+	margin-left: 60px;
+}
+.four{
+	padding-left: 60px;
+	margin-bottom: 20px;
+}
+.four span:first-child{
+	margin-left: 24px;
+}
+.four span:last-child{
+	margin-left: 60px;
+}
+#usernum{
+	border: none;
+	background-color: #eee;
+}
+#sex{
+	width: 392px;
+	height: 34px;
+}
+.form_two{
+	margin-top: 32px;
+}
+p{
+	font-size: 15px;
+    color: #6379bb;
+}
+.form_two .btn{
+	display: flex;
+	justify-content: center;
+}

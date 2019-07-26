@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bumen.css"/>
+	</head>
+	<body>
+		<div class="info">
+			部门名称：<input type="text" name="" id="input" value="" />
+			部门状态：<select name="ZT" id="input">
+						<option value="所有">所有</option>
+						<option value="显示">显示</option>
+						<option value="隐藏">隐藏</option>
+					</select>
+			
+			<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+				<span class="glyphicon glyphicon-search"></span>搜索
+			</button>
+			<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+				<span class="glyphicon glyphicon-refresh"></span>重置
+			</button>
+		</div>
+		
+		<div class="hack">
+			<!-- <ul class="hack_top">
+				<li>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal">
+						<span class="glyphicon glyphicon-plus"></span>
+						新增
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm">
+						<span class="glyphicon glyphicon-edit"></span>
+						修改
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+						<span class="glyphicon glyphicon-remove"></span>
+						展开/折叠
+					</button>
+				</li>
+				<li>
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe654;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe642;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe640;</i>
+					  </button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td></td>
+						<td><a href="">部门名称</a></td>
+						<td><a href="">排序</a></td>
+						<td><a href="">状态</a></td>
+						<td><a href="">创建时间</a></td>
+						<td class="last"><a href="">操作</a></td>
+					</tr>
+					<tr class="hover"">
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>若依科技</td>
+						<td>0</td>
+						<td><button type="button" class="layui-btn layui-btn-xs layui-btn-normal">正常</button></td>
+						<td>2018-03-16 11:33:00</td>
+						<td></td>
+					</tr>
+				</table>				
+			</div> -->
+			
+			<div class="layui-container">
+				<br><br>
+				<a class="layui-btn layui-btn-normal" href="index.html">&lt;&lt;返回</a>
+				&nbsp;&nbsp;
+				<div class="layui-btn-group">
+					<button class="layui-btn" id="btn-expand">全部展开</button>
+					<button class="layui-btn" id="btn-fold">全部折叠</button>
+				</div>
+			
+				<table id="auth-table" class="layui-table" lay-filter="auth-table"></table>
+			</div>
+			<!-- 操作列 -->
+			<script type="text/html" id="auth-state">
+				<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="edit">修改</a>
+				<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+			</script>
+			
+			<script src="../../../../../css/layui/layui.js"></script>
+			<script>
+				layui.config({
+					base: 'module/'
+				}).extend({
+					treetable: 'treetable-lay/treetable'
+				}).use(['table', 'treetable'], function () {
+					var $ = layui.jquery;
+					var table = layui.table;
+					var treetable = layui.treetable;
+			
+					// 渲染表格
+					layer.load(2);
+					treetable.render({
+						treeColIndex: 1,
+						treeSpid: -1,
+						treeIdName: 'authorityId',
+						treePidName: 'parentId',
+						elem: '#auth-table',
+						url: 'json/menus.json',
+						page: false,
+						cols: [[
+							{type: 'numbers'},
+							{field: 'authorityName', minWidth: 200, title: '权限名称'},
+							{field: 'authority', title: '权限标识'},
+							{field: 'menuUrl', title: '菜单url'},
+							{field: 'orderNumber', width: 80, align: 'center', title: '排序号'},
+							{
+								field: 'isMenu', width: 80, align: 'center', templet: function (d) {
+									if (d.isMenu == 1) {
+										return '<span class="layui-badge layui-bg-gray">按钮</span>';
+									}
+									if (d.parentId == -1) {
+										return '<span class="layui-badge layui-bg-blue">目录</span>';
+									} else {
+										return '<span class="layui-badge-rim">菜单</span>';
+									}
+								}, title: '类型'
+							},
+							{templet: '#auth-state', width: 120, align: 'center', title: '操作'}
+						]],
+						done: function () {
+							layer.closeAll('loading');
+						}
+					});
+			
+					$('#btn-expand').click(function () {
+						treetable.expandAll('#auth-table');
+					});
+			
+					$('#btn-fold').click(function () {
+						treetable.foldAll('#auth-table');
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>

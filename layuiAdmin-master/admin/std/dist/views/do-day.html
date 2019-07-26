@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/do-day.css"/>
+	</head>
+	<body>
+		<div class="info">
+			系统模块：<input type="text" name="" id="input" value="" />
+			操作人员：<input type="text" name="" id="input" value="" />
+			操作类型：<select name="ZT" id="input">
+						<option value="请选择">请选择</option>
+						<option value="新增">新增</option>
+						<option value="修改">修改</option>
+						<option value="删除">删除</option>
+						<option value="授权">授权</option>
+						<option value="导出">导出</option>
+						<option value="导入">导入</option>
+						<option value="新强退增">强退</option>
+						<option value="生成代码">生成代码</option>
+						<option value="清空数据">清空数据</option>
+					</select>
+					<p></p>
+			操作状态：<select name="ZT" id="input">
+						<option value="新增">所有</option>
+						<option value="成功">成功</option>
+						<option value="失败">失败</option>
+					</select>
+			操作时间：
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test" placeholder="开始时间">
+			</div>
+			-
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test1" placeholder="结束时间">
+			</div>
+			<script src="../../../../../css/layui/layui.js"></script>
+			<script>
+				layui.use('laydate', function(){
+				  var laydate = layui.laydate;
+				  laydate.render({
+				  	elem: '#test' //指定元素
+				  });
+				  //执行一个laydate实例
+				  laydate.render({
+					elem: '#test1' //指定元素
+				  });
+				});
+			</script>
+			
+			<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+				<span class="glyphicon glyphicon-search"></span>搜索
+			</button>
+			<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+				<span class="glyphicon glyphicon-refresh"></span>重置
+			</button>
+		</div>
+
+		<div class="hack">
+			<ul class="hack_top">
+				<li>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+						<span class="glyphicon glyphicon-remove"></span>
+						删除
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm">
+						<span class="glyphicon glyphicon-edit"></span>
+						清空
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal layui-btn-warm">
+						<span class="glyphicon glyphicon-save"></span>
+						导出
+					</button>
+				</li>
+				<li>
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe654;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe642;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe640;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+					  	<i class="layui-icon layui-icon-app"></i>
+					  </button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><a href="">日志编号</a></td>
+						<td><a href="">系统模块</a></td>
+						<td><a href="">操作类型</a></td>
+						<td><a href="">操作人员</a></td>
+						<td><a href="">部门名称</a></td>
+						<td><a href="">主机</a></td>
+						<td class="last"><a href="">操作地点</a></td>
+						<td>操作状态</td>
+						<td>操作时间</td>
+						<td>操作</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30089</td>
+						<td>在线用户</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">强退</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:13:29</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30088</td>
+						<td>重置密码</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">修改</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>113.71.38.243</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:09:30</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30087</td>
+						<td>重置密码</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">强退</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:09:25</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30086</td>
+						<td>代码生成</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">生成代码</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>219.157.251.124</td>
+						<td>河南 郑州</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:01:02</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30085</td>
+						<td>代码生成</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">导入</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>219.157.251.124</td>
+						<td>河南 郑州</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:01:02</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30089</td>
+						<td>在线用户</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">强退</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:13:29</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30083</td>
+						<td>在线用户</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">生成代码</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:13:29</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30089</td>
+						<td>在线用户</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">强退</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:13:29</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30089</td>
+						<td>在线用户</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">强退</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:13:29</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>30089</td>
+						<td>在线用户</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs layui-btn-normal">强退</button></td>
+						<td>admin</td>
+						<td>研发部门</td>
+						<td>211.141.83.125</td>
+						<td>XX XX</td>
+						<td class="last"><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td>2019-07-24 15:13:29</td>
+						<td>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								详细
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="footer">
+				<div class="footer_left">
+					第 1 到 10 条，共 29988 条记录。
+					<select name="number" lay-verify="">
+					  <option value="10">10</option>
+					  <option value="25">25</option>
+					  <option value="50">50</option>
+					</select>
+					条记录每页
+				</div>
+				
+				<div class="footer_right">
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe603;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm hover">
+					  	<i class="layui-icon">1</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">2</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">3</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">4</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">5</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe65f;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">3000</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe602;</i>
+					  </button>
+					</div>
+					
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-primary">
+						<i class="layui-icon">1</i>
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-primary tiao">
+						<i class="layui-icon">跳转</i>
+					</button>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+	padding: 10px 35px;
+	background: #f3f3f4;
+}
+.one{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.one_left{
+	width: 49%;
+}
+.one_right{
+	width: 49%;
+}
+
+.one_left .layui-collapse .layui-colla-item .layui-show{
+	padding: 0 20px;
+}
+.one_left .layui-collapse .layui-colla-item{
+	padding-bottom: 10px;
+	background: #fff;
+}
+.one_left .layui-collapse .layui-colla-item h2{
+	font-weight: bold;
+	background: #fff;
+}
+.one_left .layui-collapse .layui-colla-item .layui-show table{
+	width: 100%;
+}
+.one_left .layui-collapse .layui-colla-item .layui-show table tr td{
+	width: 50%;
+	border-bottom: 1px solid #e7eaec;
+	line-height: 35px;
+	padding-left: 10px;
+}
+
+.one_right .layui-collapse .layui-colla-item .layui-show{
+	padding: 0 20px;
+}
+.one_right .layui-collapse .layui-colla-item{
+	padding-bottom: 10px;
+	background: #fff;
+}
+.one_right .layui-collapse .layui-colla-item h2{
+	font-weight: bold;
+	background: #fff;
+}
+.one_right .layui-collapse .layui-colla-item .layui-show table{
+	width: 100%;
+}
+.one_right .layui-collapse .layui-colla-item .layui-show table tr td{
+	width: 50%;
+	border-bottom: 1px solid #e7eaec;
+	line-height: 35px;
+	padding-left: 10px;
+}
+
+
+.two{
+	width: 100%;
+	margin-top: 25px;
+}
+
+.two_item .layui-collapse .layui-colla-item .layui-show{
+	padding: 0 20px;
+}
+.two_item .layui-collapse .layui-colla-item{
+	padding-bottom: 10px;
+	background: #fff;
+}
+.two_item .layui-collapse .layui-colla-item h2{
+	font-weight: bold;
+	background: #fff;
+}
+.two_item .layui-collapse .layui-colla-item .layui-show table{
+	width: 100%;
+}
+.two_item .layui-collapse .layui-colla-item .layui-show table tr td{
+	border-bottom: 1px solid #e7eaec;
+	line-height: 35px;
+	padding-left: 10px;
+	width: 25%;
+}
+
+.three{
+	width: 100%;
+	margin-top: 25px;
+}
+
+.three_item .layui-collapse .layui-colla-item .layui-show{
+	padding: 0 20px;
+}
+.three_item .layui-collapse .layui-colla-item{
+	padding-bottom: 10px;
+	background: #fff;
+}
+.three_item .layui-collapse .layui-colla-item h2{
+	font-weight: bold;
+	background: #fff;
+}
+.three_item .layui-collapse .layui-colla-item .layui-show table{
+	width: 100%;
+}
+.three_item .layui-collapse .layui-colla-item .layui-show table tr td{
+	border-bottom: 1px solid #e7eaec;
+	line-height: 35px;
+	padding-left: 10px;
+}

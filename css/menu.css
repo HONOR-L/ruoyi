@@ -1,0 +1,69 @@
+body{
+	padding: 10px 15px 30px 15px;
+	background: #F3F3F4;
+}
+.info{
+	width: 100%;
+	padding: 15px 0 15px 20px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+	border-radius: 6px;
+	background: #fff;
+	margin-bottom: 15px;
+}
+.info #input{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.info #btn{
+	margin-left: 20px;
+}
+.info #btn span{
+	margin-right: 5px;
+}
+.info #btn1 span{
+	margin-right: 5px;
+}
+
+.hack{
+	width: 100%;
+	padding: 15px 20px 280px 20px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+	border-radius: 6px;
+	background: #fff;
+}
+.hack_top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.hack_bot table{
+	width: 100%;
+	height: 100%;
+	text-indent: 10px;
+	color:#676a6c;
+}
+.hack_bot table tr{
+	line-height: 40px;
+	border-bottom: 1px solid #E7EAEC;
+}
+.hack_bot table tr:first-child a{
+	color:#676a6c;
+}
+.hack_bot table tr:first-child a:hover{
+	text-decoration: none;
+}
+.hack_bot table tr:first-child{
+	background: #EFF3F8;
+}
+.hack_bot table tr .last{
+	text-align: center;
+}
+.hack_bot table .hover:hover{
+	background: #F5F5F5;
+}
+.hack_bot table tr:nth-child(2){
+	background: #F5F5F5;
+}

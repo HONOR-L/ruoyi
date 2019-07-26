@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../../css/login-day.css"/>
+	</head>
+	<body>
+		<div class="info">
+			系统模块：<input type="text" name="" id="input" value="" />
+			操作人员：<input type="text" name="" id="input" value="" />
+			操作状态：<select name="ZT" id="input">
+						<option value="新增">所有</option>
+						<option value="成功">成功</option>
+						<option value="失败">失败</option>
+					</select>
+					<p></p>
+			操作时间：
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test" placeholder="开始时间">
+			</div>
+			-
+			<div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+			  <input type="text" class="layui-input" id="test1" placeholder="结束时间">
+			</div>
+			<script src="../../../../../css/layui/layui.js"></script>
+			<script>
+				layui.use('laydate', function(){
+				  var laydate = layui.laydate;
+				  laydate.render({
+				  	elem: '#test' //指定元素
+				  });
+				  //执行一个laydate实例
+				  laydate.render({
+					elem: '#test1' //指定元素
+				  });
+				});
+			</script>
+			
+			<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+				<span class="glyphicon glyphicon-search"></span>搜索
+			</button>
+			<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+				<span class="glyphicon glyphicon-refresh"></span>重置
+			</button>
+		</div>
+
+		<div class="hack">
+			<ul class="hack_top">
+				<li>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+						<span class="glyphicon glyphicon-remove"></span>
+						删除
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm">
+						<span class="glyphicon glyphicon-edit"></span>
+						清空
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-normal layui-btn-warm">
+						<span class="glyphicon glyphicon-save"></span>
+						导出
+					</button>
+				</li>
+				<li>
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe654;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe642;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+						<i class="layui-icon">&#xe640;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+					  	<i class="layui-icon layui-icon-app"></i>
+					  </button>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="hack_bot">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td><a href="">访问编号</a></td>
+						<td><a href="">登录名称</a></td>
+						<td><a href="">登录地址</a></td>
+						<td><a href="">登录地点</a></td>
+						<td><a href="">浏览器</a></td>
+						<td><a href="">操作系统</a></td>
+						<td class="last"><a href="">登录状态</a></td>
+						<td>操作信息</td>
+						<td>登录时间</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id="" value="" /></td>
+						<td>361391</td>
+						<td>admin</td>
+						<td>218.94.126.188</td>
+						<td>江苏 南京</td>
+						<td>Chrome</td>
+						<td>Windows 10</td>
+						<td><button type="button" class="layui-btn layui-btn-radius layui-btn-xs">成功</button></td>
+						<td class="last">登录成功</td>
+						<td>2019-07-24 16:54:01</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="footer">
+				<div class="footer_left">
+					第 1 到 10 条，共 361228 条记录。
+					<select name="number" lay-verify="">
+					  <option value="10">10</option>
+					  <option value="25">25</option>
+					  <option value="50">50</option>
+					</select>
+					条记录每页
+				</div>
+				
+				<div class="footer_right">
+					<div class="layui-btn-group">
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe603;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm hover">
+					  	<i class="layui-icon">1</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">2</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">3</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">4</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">5</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe65f;</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+					  	<i class="layui-icon">36123</i>
+					  </button>
+					  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						<i class="layui-icon">&#xe602;</i>
+					  </button>
+					</div>
+					
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-primary">
+						<i class="layui-icon">1</i>
+					</button>
+					<button type="button" class="layui-btn layui-btn-sm layui-btn-primary tiao">
+						<i class="layui-icon">跳转</i>
+					</button>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
